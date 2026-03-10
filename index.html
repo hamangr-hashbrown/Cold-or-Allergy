@@ -6,28 +6,27 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
-Author 2
+Grayson Haman
+
  
 Further Information:
 http://cns.utexas.edu/fri
  
 Research Educator:
-Timothy Riedel
-triedel@utexas.edu
+hamangr@student.saviochs.org
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+To give options of symptoms of both a cold and allergies so that people can select their symptoms and figure out whether they have a cold or allergies
  
 Known Issues:
-blah, blah, blah, blah
+This is not made by a doctor or a studen doctor and only from doctor certified sources. Do not fully trust results and always confim diagnosis with your docotr. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
    <head> 
-      <title>Hello World</title>  
+      <title>Cold or Allergies?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -96,8 +95,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	<!--Herh-->
     	<div id="content" class="w3-container">
-        <p>Put Question 1 content here.</p>    
-    	</div>
+        <p>Are you spitting colored mucus?</p>    
+    	<a href="#two"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Yes </a>
+        <a href="#two"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> No </a>
 </div>
 
 <div class="page" id="two">
@@ -106,13 +108,84 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
-	</div>
+		<p>Do you have a fever?</p>
+	<a href="#three"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#three" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> No </a>
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	<p>Cold or Allergies?</p>
 </footer>
 
 </body>
 </html>
+
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you feel itchy in the eyes, mouth, face, or throat?</p>
+	<a href="#four"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#four" onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> No </a>
+</div>	
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>Cold or Allergies?</p>
+
+
+    <div class="page" id="four">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Does your body ache?</p>
+	<a href="#five"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#five" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> No </a>
+</div>	
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>Cold or Allergies?</p>
+
+
+
+     <div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>_How long have you had these symptoms?</p>
+	<a href="#six"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Less than two weeks </a>
+    <a href="#six" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> More than two weeks </a>
+</div>	
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>Cold or Allergies?</p>
+
+
+      <div class="page" id="six">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>_Does your location change your symptoms?</p>
+	<a href="#seven"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#seven" onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
+)" class="w3-btn w3-grey w3-round"> No </a>
+</div>	
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>Cold or Allergies?</p>

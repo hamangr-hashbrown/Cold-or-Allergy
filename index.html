@@ -41,12 +41,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
-
+		alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
+        alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
         }
 
   </script>
@@ -96,10 +96,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Herh-->
     	<div id="content" class="w3-container">
         <p>Are you spitting colored mucus?</p>    
-    	<a href="#two"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Yes </a>
-        <a href="#two"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> No </a>
+    	<a href="#two"onclick= "coldAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
+        <a href="#two"onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> No </a>
 </div>
 
 <div class="page" id="two">
@@ -109,10 +107,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-	<a href="#three"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Yes </a>
-    <a href="#three" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#three"onclick="coldAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#three" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> No </a>
+    
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -129,10 +126,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you feel itchy in the eyes, mouth, face, or throat?</p>
-	<a href="#four"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Yes </a>
-    <a href="#four" onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#four"onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#four" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> No </a>
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -142,14 +137,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
-	</div>
-	
+</div>
+
 	<div id="content" class="w3-container">
 		<p>Does your body ache?</p>
-	<a href="#five"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Yes </a>
-    <a href="#five" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#five"onclick="coldAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
+    <a href="#five" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> No </a>
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -164,10 +157,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>_How long have you had these symptoms?</p>
-	<a href="#six"onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Less than two weeks </a>
-    <a href="#six" onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> More than two weeks </a>
+	<a href="#six"onclick="coldAdd()" class="w3-btn w3-grey w3-round"> Less than two weeks </a>
+    <a href="#six" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> More than two weeks </a>
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -181,10 +172,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>_Does your location change your symptoms?</p>
-	<a href="#seven"onclick="allergyAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> Yes </a>
-    <a href="#seven" onclick="coldAdd(alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count)
-)" class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#seven"onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
+
+    <a href="#seven" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> No </a>
+</div>	
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>Cold or Allergies?</p>
+
+
+
+     <div class="page" id="seven">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Based on your answers, you most likely have...</p>
+    <a class="w3-btn w3-grey w3-round"> See Results </a>
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
